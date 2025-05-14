@@ -46,10 +46,10 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textViewDate"
+                android:id="@+id/textViewBigDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="16dp"
+                android:paddingLeft="8dp"
                 android:paddingRight="22dp"
                 android:text="26 Jan"
                 android:textColor="@color/lightText"
@@ -68,12 +68,12 @@
             android:orientation="horizontal"
             android:paddingLeft="22sp"
             android:paddingRight="22sp"
-            android:weightSum="1">
+            android:weightSum="0">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="175dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0"
+                android:layout_weight="1"
                 android:backgroundTint="#307990F9"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="0dp"
@@ -154,14 +154,14 @@
 
             <View
                 android:id="@+id/view"
-                android:layout_width="wrap_content"
+                android:layout_width="12dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="0" />
 
             <androidx.cardview.widget.CardView
-                android:layout_width="175dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0"
+                android:layout_weight="1"
                 android:backgroundTint="#3046CF8B"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="0dp"
@@ -252,12 +252,12 @@
             android:orientation="horizontal"
             android:paddingLeft="22sp"
             android:paddingRight="22sp"
-            android:weightSum="1">
+            android:weightSum="0">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="175dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0"
+                android:layout_weight="1"
                 android:backgroundTint="#30BC5EAD"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="0dp"
@@ -338,14 +338,14 @@
 
             <View
                 android:id="@+id/view4"
-                android:layout_width="wrap_content"
+                android:layout_width="12dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="0" />
 
             <androidx.cardview.widget.CardView
-                android:layout_width="175dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0"
+                android:layout_weight="1"
                 android:backgroundTint="#30908986"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="0dp"
@@ -418,7 +418,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="0"
-                            android:text="Shopping"
+                            android:text="Other"
                             android:textSize="17dp" />
                     </LinearLayout>
                 </LinearLayout>

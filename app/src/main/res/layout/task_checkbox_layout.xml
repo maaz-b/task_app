@@ -16,7 +16,7 @@
         android:orientation="horizontal">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBoxTask"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
@@ -43,14 +43,14 @@
                 android:typeface="normal" />
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewTaskCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/bluish"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="0dp">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/textViewTaskCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="6dp"
