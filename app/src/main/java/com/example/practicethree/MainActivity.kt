@@ -1,6 +1,7 @@
 package com.example.practicethree
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.practicethree.data.model.TaskCategory
 import com.example.practicethree.data.model.TaskModel
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.util.Date
@@ -28,6 +30,14 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.checkboxRecycleView)
         createAndSetTaskList(recyclerView, this)
 
+
+        val addFAB = findViewById<FloatingActionButton>(R.id.floatingActionButton2)
+        addFAB.setOnClickListener{
+            val intent = Intent(this, CreateTaskActivity::class.java)
+        startActivity(intent)}
+
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -35,6 +45,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+
 
 fun setCurrentDayOnInit(bigTV : TextView){
     val currentDate = Date()
