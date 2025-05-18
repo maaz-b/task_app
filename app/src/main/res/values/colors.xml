@@ -16,6 +16,8 @@
     <color name="lightText">#40000000</color>
     <color name="reverseTextColor">#EDEDED</color>
 
+    <color name="secondaryAction">#EFEFEF</color>
+
     <color name="danger">#FFFF2B4E</color>
     <color name="success">#06AF01</color>
     <color name="warning">#C6CA02</color>
