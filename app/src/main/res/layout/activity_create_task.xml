@@ -44,7 +44,7 @@
                 android:layout_height="56dp" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/addTaskEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -79,7 +79,6 @@
                 android:id="@+id/addTaskHealthCV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/secondaryAction"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="0dp">
 
@@ -107,7 +106,6 @@
                 android:id="@+id/addTaskPersonalCV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/secondaryAction"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="0dp">
 
@@ -135,7 +133,6 @@
                 android:id="@+id/addTaskWorkCV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/secondaryAction"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="0dp">
 
@@ -212,7 +209,7 @@
                         android:layout_height="24dp"
                         android:layout_margin="18dp"
                         android:layout_weight="1"
-                        android:tint="@color/textColor"
+                        app:tint="@color/textColor"
                         app:srcCompat="@drawable/clock_plus" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -224,9 +221,10 @@
                 android:layout_weight="0" />
 
             <com.example.practicethree.PrimeButton
+                android:id="@+id/addTaskSaveButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
 
+                android:layout_height="wrap_content"
                 app:cardElevation="0dp" />
         </LinearLayout>
     </LinearLayout>
